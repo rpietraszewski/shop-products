@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
+import java.util.Set;
 
 @AllArgsConstructor
 @Getter
@@ -16,5 +16,5 @@ public class Smartphone extends Product {
     private String operatingSystem;
     private String megapixels;
     private String batteryCapacity;
-    private List<Accessory> accessories;
+    private Set<Accessory> accessories;
 }
