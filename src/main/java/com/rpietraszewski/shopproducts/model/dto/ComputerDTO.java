@@ -1,20 +1,19 @@
-package com.rpietraszewski.shopproducts.model.entity;
+package com.rpietraszewski.shopproducts.model.dto;
 
+import com.rpietraszewski.shopproducts.model.entity.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.Setter;
 
 import java.util.Set;
 
 @AllArgsConstructor
 @Getter
-@Setter
-public class Computer extends Product{
+public class ComputerDTO extends ProductDTO {
     private Processor processor;
     private Motherboard motherboard;
     private Case computerCase;
     private GraphicsCard graphicsCard;
     private Set<RAM> ram;
     private PowerSupply powerSupply;
-    private Set<Disk> disks;
+    private Set<Long> disks;
 }
