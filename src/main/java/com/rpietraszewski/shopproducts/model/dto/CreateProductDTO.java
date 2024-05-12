@@ -2,16 +2,11 @@ package com.rpietraszewski.shopproducts.model.dto;
 
 import com.rpietraszewski.shopproducts.enums.ProductType;
 import com.rpietraszewski.shopproducts.model.entity.Product;
-import lombok.Getter;
 
 import java.util.Map;
 import java.util.Set;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-
-@Getter
-public class ProductDTO {
+public class CreateProductDTO {
     private Long id;
     private String name;
     private String price;

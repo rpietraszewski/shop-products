@@ -4,6 +4,11 @@ import com.rpietraszewski.shopproducts.enums.ProductType;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 @Getter
 @Setter
 public class Product {
@@ -13,4 +18,6 @@ public class Product {
     private ProductType productType;
     private Boolean availability;
     private String manufacturer;
+    private Set<Product> linkedProducts = new HashSet<>();
+    private Map<String, String> additionalCustomizations = new HashMap<>();
 }
